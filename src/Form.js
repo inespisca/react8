@@ -24,14 +24,12 @@ class Form extends Component {
     render() {
         return (
             <div className="Form">
-                 <h1>{this.state.globalTitle}</h1>
-                <form onSubmit={this.submitForm}>
-                    <div className="form-data">
-                        <label>Write your input here</label>
-                            <textarea type="text" name="title" onChange={this.onChange}/>
-                    </div>
-                    <div className="form-data">
-                        <input type="submit" value="Send" />
+                <h1>{this.state.globalTitle}</h1>
+                    <form onSubmit={this.submitForm}>
+                        <p>Write your input here</p>
+                        <textarea type="text" name="title" onChange={this.onChange}/>
+                    <div className="form2">
+                            <input type="submit" value="Send" />
                     </div>
                 </form>
             </div>
